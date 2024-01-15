@@ -3,14 +3,20 @@
 * {
   font-family: 'Mulish', sans-serif;
 }
+
 :root {
   --primary-font-size: 1rem;
   --primary-font-color: #5A5A5D;
+  --button-color: #FF5400;
 }
 
 /* header section styles */
+header {
+  margin: 0 135px;
+}
+
 .web-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 800;
 }
 
@@ -25,4 +31,45 @@
   list-style: none;
   gap: 44px;
   font-size: var(--primary-font-size);
+}
+/* banner section styles */
+.banner {
+  background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+  padding: 106px 185px;
+  background-repeat: no-repeat;
+}
+
+.banner-text {
+  text-align: center;
+  color: #FFF;
+}
+
+.banner-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.30);;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: var(--primary-font-size);
+}
+
+.form > input {
+  padding: 16px;
+  color: var(--primary-font-color);
+}
+
+.form select {
+  padding: 15px;
+}
+
+.form button {
+  padding: 16px 35px;
+  color: #FFF;
+  background: var(--button-color);
+  border: none;
 }
