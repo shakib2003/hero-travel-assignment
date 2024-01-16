@@ -284,11 +284,76 @@ header {
   padding: 32px 50px 32px 32px;
 }
 
+/* newsletter section */
+.news {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 24px;
+}
+
+.newsletter {
+  border-radius: 16px;
+  border: 1px solid #FF5400;
+  padding: 40px;
+}
+
+.newsletter h4 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.newsletter .box-width {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box-width input {
+  width: 393px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border: none;
+}
+
+.box-width button {
+  width: 393px;
+  height: 52px;
+}
+
+.news-img {
+  width: 450px;
+}
+
+/* footer section */
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  padding: 110px 284px;
+  text-align: center;
+}
+
+footer hr {
+  margin: 50px;
+}
+
+footer p {
+  margin-bottom: 30px;
+}
+
 /* mobile device */
 @media screen and (max-width: 576px) {
   header {
     margin: 0 20px;
   }
+
+  /* .logo {
+    width: 28.724px;
+    height: 33.516px;
+  } */
 
   .nav {
     display: flex;
@@ -343,9 +408,7 @@ header {
 
   .destination-text {
     text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 40px;
+    margin: 20px;
   }
 
   .destination-img {
@@ -408,11 +471,15 @@ header {
     font-weight: 600;
   }
 
-  .choose-text,
+  .choose-text {
+    text-align: center;
+    margin: 20px 33px;
+  }
+
   .choose-option,
   .choose-row1,
   .choose-row2 {
-    margin: 24px 20px;
+    margin: 20px;
   }
 
   .choose-row1,
@@ -428,5 +495,39 @@ header {
     width: 300px;
     height: 350px;
     padding: 32px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .news {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .newsletter {
+    padding: 24px;
+  }
+
+  .box-width input {
+    width: 288px;
+    height: 52px;
+  }
+
+  .box-width button {
+    width: 288px;
+    height: 52px;
+  }
+
+  .news-img {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .news-img img {
+    width: 335px;
+    height: 300px;
+  }
+  footer {
+    padding: 20px 32px;
   }
 }
