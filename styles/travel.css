@@ -229,6 +229,61 @@ header {
   margin: 150px 315px 150px 315px;
 }
 
+/* choose us section */
+.choose-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.choose-option {
+  margin: 0 70px;
+}
+
+.choose-title {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.choose-row1 {
+  display: flex;
+  gap: 24px;
+}
+
+.choose-r1 {
+  width: 520px;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.20);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 32px 50px 32px 32px;
+}
+
+.choose-r2 {
+  width: 520px;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.20);
+  background: rgba(41, 206, 246, 0.05);
+  padding: 32px 50px 32px 32px;
+}
+
+.choose-row2 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.choose-r3 {
+  margin-top: 24px;
+  width: 520px;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.20);
+  background: rgba(233, 68, 68, 0.05);
+  padding: 32px 50px 32px 32px;
+}
+
 /* mobile device */
 @media screen and (max-width: 576px) {
   header {
@@ -263,7 +318,7 @@ header {
   }
 
   .form {
-    padding: 16px 16px 0 16px;
+    padding: 16px 16px 16px 16px;
     flex-direction: column;
     gap: 16px;
     justify-content: center;
@@ -292,9 +347,11 @@ header {
     margin-right: 20px;
     margin-bottom: 40px;
   }
+
   .destination-img {
     margin: 20px;
   }
+
   .destination-img,
   .img-row1,
   .img-row2,
@@ -314,35 +371,62 @@ header {
     height: 176px;
     background-position: center;
   }
-  
+
   .img-row1 h3 {
     margin: 75px 121px;
     font-size: 20px;
     font-weight: 600;
   }
+
   .img-r3 h3 {
     margin: 75px 126px;
     font-size: 20px;
     font-weight: 600;
   }
+
   .img-r4 h3 {
     margin: 75px 97px;
     font-size: 20px;
     font-weight: 600;
   }
+
   .img-r5 h3 {
     margin: 75px 128px;
     font-size: 20px;
     font-weight: 600;
   }
+
   .img-r6 h3 {
     margin: 75px 111px;
     font-size: 20px;
     font-weight: 600;
   }
+
   .img-r7 h3 {
     margin: 75px 113px;
     font-size: 20px;
     font-weight: 600;
+  }
+
+  .choose-text,
+  .choose-option,
+  .choose-row1,
+  .choose-row2 {
+    margin: 24px 20px;
+  }
+
+  .choose-row1,
+  .choose-row2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .choose-r1,
+  .choose-r2,
+  .choose-r3 {
+    width: 300px;
+    height: 350px;
+    padding: 32px;
   }
 }
