@@ -4,10 +4,14 @@
   font-family: 'Mulish', sans-serif;
 }
 
-:root {
-  --primary-font-size: 1rem;
-  --primary-font-color: #5A5A5D;
-  --button-color: #FF5400;
+.text-grey {
+  color: rgba(19, 19, 24, 0.70);
+}
+
+.primary-btn {
+  border-radius: 8px;
+  background: #FF5400;
+  border: none;
 }
 
 /* header section styles */
@@ -16,7 +20,7 @@ header {
 }
 
 .web-title {
-  font-size: 2.25rem;
+  font-size: 36px;
   font-weight: 800;
 }
 
@@ -26,17 +30,24 @@ header {
   align-items: center;
 }
 
-.nav ul {
+.nav-tool ul {
   display: flex;
   list-style: none;
   gap: 44px;
-  font-size: var(--primary-font-size);
+  font-size: 18px;
 }
+
+.bar {
+  display: none;
+}
+
+
 /* banner section styles */
 .banner {
   background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
   padding: 106px 185px;
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .banner-text {
@@ -45,22 +56,22 @@ header {
 }
 
 .banner-text h1 {
-  font-size: 4rem;
+  font-size: 64px;
   font-weight: 800;
 }
 
 .form {
-  background: rgba(255, 255, 255, 0.30);;
+  background: rgba(255, 255, 255, 0.30);
+  ;
   padding: 16px;
   border-radius: 8px;
   display: flex;
   justify-content: space-evenly;
-  font-size: var(--primary-font-size);
+  font-size: 16px;
 }
 
-.form > input {
+.form>input {
   padding: 16px;
-  color: var(--primary-font-color);
 }
 
 .form select {
@@ -70,6 +81,48 @@ header {
 .form button {
   padding: 16px 35px;
   color: #FFF;
-  background: var(--button-color);
-  border: none;
+}
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+  header {
+    margin: 0 20px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav .web-title {
+    font-size: 21.543px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .banner {
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+  }
+
+  .banner-text h1 {
+    font-size: 22px;
+  }
+
+  .form {
+    padding: 16px 16px 0 16px;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-tool {
+    width: 225px;
+  }
 }
